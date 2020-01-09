@@ -1,5 +1,5 @@
-# Questionaire
-Post Task questionaire created for Energenious in the I&E (Innovation & Entrepreneurship) Course at TU Berlin
+# Post Task Questionaire
+Post Task questionaire created for Energenious (https://www.energenious.eu/) in the I&E (Innovation & Entrepreneurship) Course at TU Berlin
 
 # index.php
 Main page with the box for the website loading and the bottom part for the questions
