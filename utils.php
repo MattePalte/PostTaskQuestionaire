@@ -63,7 +63,7 @@ function get_next_index($task_index) {
             $current_code = $list_of_codes[$i];
             $next_code = $list_of_codes[$i + 1];
             if ($current_code == $task_index) {
-                echo "NEXTTTT -> ".$next_code;
+                //echo "NEXTTTT -> ".$next_code;
                 return $next_code;
             }
             $i = $i + 1;

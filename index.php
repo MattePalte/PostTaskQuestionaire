@@ -66,13 +66,12 @@ if ($valid_user) {
 <div class="container">
     <?php if ($valid_user) { ?>
         <form action="logout.php" method="post">
-        <h5 style="color: green;">Logged in as: <?php echo $username; ?> <input type="submit" value="Logout"> </h5>
-        </form>
-    <?php }?>
+        <h5 style="color: green;">Logged in as (scroll down to see the questions): <?php echo $username; ?> <input type="submit" value="Logout" class="button"> </h5>
+        </form><?php }?>
     <form action="index.php" method="post">
         <?php if (!$valid_user) { ?>
             <br>
-            <label for="username">Your username: </label>
+            <label for="username">Insert your username please: </label>
             <input id="username"  type="text" name="username">
             <h5 style="color: red;">Please insert your name and press Enter.</h5>
         <?php } else { ?>
@@ -82,6 +81,7 @@ if ($valid_user) {
             <?php if ( isset($show_warning_answer_all) && $show_warning_answer_all) { ?>
                 <h5 style="color: red;">Please answer to all questions related to the task</h5>
             <?php } ?>
+			<div id="questions">
             <table style="width:100%">
             <tr>
                 <th align="left">Question</th>
@@ -132,8 +132,9 @@ if ($valid_user) {
                 <td></td>
             </tr>
             </table>
+			</div>
             
-            <br><input type="submit" value="Submit">
+            <br><input type="submit" value="Submit" class="button">
         <?php } ?>
         
     </form>
